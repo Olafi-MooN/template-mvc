@@ -1,0 +1,19 @@
+Como funciona o data base;
+
+--- Na pasta database encontra-se:
+
+- migrations -> Cria o arquivo de transição para migrations.
+- db-config.js -> Fica a configuração de qual banco esta sendo utilizado.
+- db.sqlite -> Fica os dados do banco, aparece logo depois de rodar o comando knex migrate:latest
+
+
+--- Comandos:
+
+Passo a passo para criar uma tabela:
+
+1. - Criar uma migration -> knex migrate:make nome_da_migration.js
+1.2 - Criar tabela (roda todas as migrations existentes) -> knex migrate:latest
+1.3. - Desfazer todas migrations existentes -> knex migrate:rollback --all
+
+2. - Executar uma migration expecifica -> knex migrate:up nome_da_migration.js
+2.1 - Desfazer uma migration expecifica -> knex migrate:down nome_da_migration.js

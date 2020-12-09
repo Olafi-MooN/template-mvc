@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background);
+}
+
+.container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.container p,
+.container h1{
+    font-weight: bold;
+    text-align: center;
+    color: var(--font-color);
+    margin-bottom: 20px;
+}

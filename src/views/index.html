@@ -1,0 +1,14 @@
+{% extends "layout/template-main.html" %}
+
+{% block head %}
+    <title>Olá mundo!</title>
+    <link rel="stylesheet" href="/css/index.css">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <img src="/img/logo.svg" alt="">
+        <h1>Seja bem vindo ao padrão - MVC</h1>
+        <p>by {{result[0].first_name}}</p>
+    </div>
+{% endblock %}
